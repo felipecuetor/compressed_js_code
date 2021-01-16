@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<meta charset='utf-8'>
+<title>Get and run compressed js file</title>
+</head>
+
+<body>
+  <h1>compressed_js_code</h1>
+  <div>This html file download the necessary libraries to download and run a compressed js file.</div>
+  <div>The jszip library is used to download and unzip the file.</div>
+  <div>The "unzip_and_run.js" code is in charge of calling the jszip library and running the downloaded code.</div>
+  <div>Since the jszip library downloads and decompresses the code asynchronously, idealy, the all code will be self contained in the zip file.</div>
+  <div>The code runs all js files in the zip file.</div>
+</body>
+
+<script type="text/javascript" src="lib/jszip.min.js"></script>
+<script type="text/javascript" src="lib/jszip-utils.min.js"></script>
+
+<script type="text/javascript" src="unzip_and_run.js"></script>
+
+</html>
